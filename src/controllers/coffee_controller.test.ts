@@ -25,8 +25,14 @@ describe('Test coffeelover API endpoint request', () => {
     })
 
     test('GET Request to the /coffeelover endpoint should return correct message', async () => {
-        const res = await request(app).get('/coffeelover')
+        const res = await await request(app).get('/coffeelover')
         expect(res.statusCode).toEqual(200)
         expect(res.text).toEqual('I like coffee!')
+    })
+
+    test('GET Request to the /getCoffeeMessage endpoint should return correct message', async () => {
+        const res = await await request(app).get('/coffeeMessage/tea')
+        expect(res.statusCode).toEqual(200)
+        expect(res.text).toEqual('I like tea!')
     })
 })

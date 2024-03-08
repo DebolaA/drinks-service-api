@@ -13,3 +13,9 @@ export const getCoffee = async (
 export const getCoffeeLoverMssg = async (req: Request, res: Response) => {
     res.send('I like coffee!')
 }
+
+export const getCoffeeMessage = async (req: Request, res: Response) => {
+    const coffeeName = req.params.coffeeName
+
+    res.send(`I like ${coffeeName}!`)
+}

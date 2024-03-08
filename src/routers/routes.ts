@@ -5,3 +5,4 @@ export const router = express.Router()
 
 router.get('/coffee', coffeeController.getCoffee)
 router.get('/coffeelover', coffeeController.getCoffeeLoverMssg)
+router.get('/coffeeMessage/:coffeeName', coffeeController.getCoffeeMessage)
