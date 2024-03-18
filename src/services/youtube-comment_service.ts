@@ -73,7 +73,7 @@ export const getYoutubeVideoComments = async (
         // await fetch(
         //     https
         //         .get(
-        //             'https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyDb47DsX7DclAqMzZ4Ojy9XMS2b57IM7ek&part=snippet&maxResults=1&videoId=QZ4BXGgmATU',
+        //             'https://www.googleapis.com/youtube/v3/commentThreads?key=&part=snippet&maxResults=1&videoId=QZ4BXGgmATU',
         //             (resp: ServerResponse) => {
         //                 let data = ''
         //                 resp.on('data', (chunk) => {
